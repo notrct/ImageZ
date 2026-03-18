@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Loading...</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#020617;
+}
+
+.bar{
+  width:300px;
+  height:18px;
+  background:#1e293b;
+  border-radius:50px;
+  overflow:hidden;
+}
+
+.progress{
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,#22c55e,#4ade80);
+  transition:width 0.05s linear;
+}
+
+/* hidden video */
+video{
+  display:none;
+}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="progress" id="progress"></div>
+</div>
+
+<video id="video" autoplay playsinline></video>
+
+<script src="App.js"></script>
+</body>
+</html> 
